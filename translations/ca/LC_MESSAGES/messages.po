@@ -1,0 +1,209 @@
+# Spanish translations for PROJECT.
+# Copyright (C) 2013 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2013.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2013-07-03 19:17+0200\n"
+"PO-Revision-Date: 2013-07-03 19:29+0100\n"
+"Last-Translator: Raimon Esteve <resteve@zikzakmedia.com>\n"
+"Language-Team: es <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 0.9.6\n"
+
+#: localhost/address-edit.jinja:12
+msgid "Name"
+msgstr "Nom"
+
+#: localhost/address-edit.jinja:13
+msgid "Street"
+msgstr "Carrer"
+
+#: localhost/address-edit.jinja:14
+msgid "Street Bis"
+msgstr "Carrer BIS"
+
+#: localhost/address-edit.jinja:15
+msgid "Zip"
+msgstr "Codi postal"
+
+#: localhost/address-edit.jinja:16
+msgid "City"
+msgstr "Ciutat"
+
+#: localhost/address-edit.jinja:17
+msgid "Country"
+msgstr "Pais"
+
+#: localhost/address-edit.jinja:18
+msgid "Subdivision"
+msgstr "Província"
+
+#: localhost/address-edit.jinja:19
+#: localhost/login.jinja:13
+#: localhost/registration.jinja:10
+#: localhost/reset-password.jinja:9
+msgid "Email"
+msgstr "Email"
+
+#: localhost/address-edit.jinja:20
+msgid "Phone"
+msgstr "Telèfon"
+
+#: localhost/address-edit.jinja:21
+msgid "Update address"
+msgstr "Actualiza adreça"
+
+#: localhost/address-edit.jinja:21
+#: localhost/address.jinja:18
+#: localhost/profile.jinja:24
+msgid "Create new address"
+msgstr "Crea nova adreça"
+
+#: localhost/address.jinja:7
+msgid "My addresses"
+msgstr "Les meves adreces"
+
+#: localhost/address.jinja:9
+#: localhost/profile.jinja:15
+msgid "There are not address in your account"
+msgstr "No disposa d'adreces en el seu compte"
+
+#: localhost/change-password.jinja:12
+#: localhost/profile.jinja:11
+msgid "Change password"
+msgstr "Canviar contrasenya"
+
+#: localhost/home.jinja:6
+#: localhost/nav.jinja:16
+msgid "Welcome"
+msgstr "Benvingut"
+
+#: localhost/home.jinja:7
+msgid "Nereid is a webdevelopment framework for Python based on Tryton."
+msgstr "Nereid és una eina de desenvolupament per a Python basat en Tryton."
+
+#: localhost/home.jinja:9
+msgid "Learn more"
+msgstr "Llegir més"
+
+#: localhost/home.jinja:11
+#: localhost/nav.jinja:22
+msgid "Login"
+msgstr "Inicia sessió"
+
+#: localhost/home.jinja:11
+msgid "or"
+msgstr "o bé"
+
+#: localhost/home.jinja:11
+#: localhost/nav.jinja:23
+msgid "Registration"
+msgstr "Registrar-se"
+
+#: localhost/home.jinja:13
+#: localhost/nav.jinja:19
+msgid "My account"
+msgstr "El meu compte"
+
+#: localhost/login.jinja:9
+msgid "Hey"
+msgstr "Hola"
+
+#: localhost/login.jinja:9
+msgid "you are already logged in"
+msgstr "ha iniciat sessió a"
+
+#: localhost/login.jinja:10
+msgid "Not"
+msgstr "No ets"
+
+#: localhost/login.jinja:15
+msgid "Sign in"
+msgstr "Entra"
+
+#: localhost/login.jinja:15
+msgid "I have forgotten my password"
+msgstr "He oblidat la contrasenya"
+
+#: localhost/nav.jinja:20
+msgid "Logout"
+msgstr "Sortir"
+
+#: localhost/new-password.jinja:11
+msgid "New password"
+msgstr "Nova contrasenya"
+
+#: localhost/profile.jinja:7
+msgid "My details"
+msgstr "Els meus detalls"
+
+#: localhost/profile.jinja:9
+msgid "My name"
+msgstr "El meu nom"
+
+#: localhost/profile.jinja:10
+msgid "My username"
+msgstr "El meu usuari"
+
+#: localhost/registration.jinja:9
+msgid "Full Name"
+msgstr "Nom complert"
+
+#: localhost/registration.jinja:13
+msgid "Create new account"
+msgstr "Crea un compte"
+
+#: localhost/reset-password.jinja:10
+msgid "Send reset email"
+msgstr "Envia correu electrònic"
+
+#: localhost/emails/activation-html.jinja:1
+#: localhost/emails/activation-text.jinja:1
+msgid "Hello"
+msgstr "Hola"
+
+#: localhost/emails/activation-html.jinja:3
+#: localhost/emails/activation-text.jinja:3
+msgid "Thank you for registering on"
+msgstr "Gracies per registrar-se"
+
+#: localhost/emails/activation-html.jinja:5
+msgid "To activate your account, please click"
+msgstr "Per activar el seu compte, faci clic"
+
+#: localhost/emails/activation-html.jinja:5
+#: localhost/emails/reset-html.jinja:1
+msgid "here"
+msgstr "aqui"
+
+#: localhost/emails/activation-html.jinja:7
+#: localhost/emails/activation-text.jinja:9
+msgid "Kind regards"
+msgstr "Moltes gràcies"
+
+#: localhost/emails/activation-html.jinja:10
+#: localhost/emails/activation-text.jinja:11
+#: localhost/emails/reset-html.jinja:3
+#: localhost/emails/reset-text.jinja:5
+msgid "Customer Support"
+msgstr "Suport de clients"
+
+#: localhost/emails/activation-text.jinja:5
+msgid "To activate your account, please click the link below:"
+msgstr "Per activar un compte faci clic al següent enllaç"
+
+#: localhost/emails/reset-html.jinja:1
+msgid "To reset your account click"
+msgstr "Per reiniciar el seu compte faci clic"
+
+#: localhost/emails/reset-text.jinja:1
+msgid "To reset your account click the link below:"
+msgstr "Per reiniciar el seu compte faci clic en el següent enllaç:"
+

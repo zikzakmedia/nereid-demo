@@ -1,0 +1,10 @@
+{{ _('Hello') }} {{ nereid_user.display_name }},
+<br/>
+{{ _('Thank you for registering on') }} {{ nereid_user.company.party.name }}.
+<br/><br/>
+{{ _('To activate your account, please click') }} <a href="{{ url_for('nereid.user.activate', active_id=nereid_user.id, activation_code=nereid_user.activation_code, _external=True) }}">{{ _('here') }}</a>
+<br/>
+{{ _('Kind regards') }} <br/>
+<br/>
+<br/>
+{{ _('Customer Support') }} {{ nereid_user.company.party.name }}

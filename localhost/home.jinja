@@ -1,0 +1,18 @@
+{% extends 'base.jinja' %}
+
+{% block main %}
+{% include 'nav.jinja' %}
+<div class="hero-unit">
+    <h1>{{ _('Welcome') }} {{ config['TITLE'] }}</h1>
+    <p>{{ _('Nereid is a webdevelopment framework for Python based on Tryton.') }}</p>
+    <p>
+        <a href="http://nereid.openlabs.co.in/docs/" class="btn btn-primary btn-large">{{ _('Learn more') }}</a>
+        {% if request.is_guest_user %}
+            <a href="{{ url_for('nereid.website.login') }}">{{ _('Login') }}</a> {{ _('or') }} <a href="{{ url_for('nereid.user.registration') }}">{{ _('Registration') }}</a>
+        {% else %}
+            <a href="{{ url_for('nereid.user.profile') }}">{{ _('My account') }}</a>
+        {% endif %}
+    </p>
+</div>
+{% endblock %}
+

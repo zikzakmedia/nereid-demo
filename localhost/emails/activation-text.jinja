@@ -1,0 +1,11 @@
+{{ _('Hello') }} {{ nereid_user.display_name }},
+ 
+{{ _('Thank you for registering on') }} {{ nereid_user.company.party.name }}.
+ 
+{{ _('To activate your account, please click the link below:') }}
+ 
+{{ url_for('nereid.user.activate', active_id=nereid_user.id, activation_code=nereid_user.activation_code, _external=True) }}
+ 
+{{ _('Kind regards') }}
+ 
+{{ _('Customer Support') }} {{ nereid_user.company.party.name }}

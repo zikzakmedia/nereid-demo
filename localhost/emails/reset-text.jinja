@@ -1,0 +1,5 @@
+{{ _('To reset your account click the link below:') }}
+ 
+{{ url_for('nereid.user.activate', active_id=nereid_user.id, activation_code=nereid_user.activation_code, _external=True) }}
+
+{{ _('Customer Support') }} {{ nereid_user.company.name }}

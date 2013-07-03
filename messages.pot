@@ -1,0 +1,198 @@
+# Translations template for PROJECT.
+# Copyright (C) 2013 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2013.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2013-07-03 19:17+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 0.9.6\n"
+
+#: localhost/address-edit.jinja:12
+msgid "Name"
+msgstr ""
+
+#: localhost/address-edit.jinja:13
+msgid "Street"
+msgstr ""
+
+#: localhost/address-edit.jinja:14
+msgid "Street Bis"
+msgstr ""
+
+#: localhost/address-edit.jinja:15
+msgid "Zip"
+msgstr ""
+
+#: localhost/address-edit.jinja:16
+msgid "City"
+msgstr ""
+
+#: localhost/address-edit.jinja:17
+msgid "Country"
+msgstr ""
+
+#: localhost/address-edit.jinja:18
+msgid "Subdivision"
+msgstr ""
+
+#: localhost/address-edit.jinja:19 localhost/login.jinja:13
+#: localhost/registration.jinja:10 localhost/reset-password.jinja:9
+msgid "Email"
+msgstr ""
+
+#: localhost/address-edit.jinja:20
+msgid "Phone"
+msgstr ""
+
+#: localhost/address-edit.jinja:21
+msgid "Update address"
+msgstr ""
+
+#: localhost/address-edit.jinja:21 localhost/address.jinja:18
+#: localhost/profile.jinja:24
+msgid "Create new address"
+msgstr ""
+
+#: localhost/address.jinja:7
+msgid "My addresses"
+msgstr ""
+
+#: localhost/address.jinja:9 localhost/profile.jinja:15
+msgid "There are not address in your account"
+msgstr ""
+
+#: localhost/change-password.jinja:12 localhost/profile.jinja:11
+msgid "Change password"
+msgstr ""
+
+#: localhost/home.jinja:6 localhost/nav.jinja:16
+msgid "Welcome"
+msgstr ""
+
+#: localhost/home.jinja:7
+msgid "Nereid is a webdevelopment framework for Python based on Tryton."
+msgstr ""
+
+#: localhost/home.jinja:9
+msgid "Learn more"
+msgstr ""
+
+#: localhost/home.jinja:11 localhost/nav.jinja:22
+msgid "Login"
+msgstr ""
+
+#: localhost/home.jinja:11
+msgid "or"
+msgstr ""
+
+#: localhost/home.jinja:11 localhost/nav.jinja:23
+msgid "Registration"
+msgstr ""
+
+#: localhost/home.jinja:13 localhost/nav.jinja:19
+msgid "My account"
+msgstr ""
+
+#: localhost/login.jinja:9
+msgid "Hey"
+msgstr ""
+
+#: localhost/login.jinja:9
+msgid "you are already logged in"
+msgstr ""
+
+#: localhost/login.jinja:10
+msgid "Not"
+msgstr ""
+
+#: localhost/login.jinja:15
+msgid "Sign in"
+msgstr ""
+
+#: localhost/login.jinja:15
+msgid "I have forgotten my password"
+msgstr ""
+
+#: localhost/nav.jinja:20
+msgid "Logout"
+msgstr ""
+
+#: localhost/new-password.jinja:11
+msgid "New password"
+msgstr ""
+
+#: localhost/profile.jinja:7
+msgid "My details"
+msgstr ""
+
+#: localhost/profile.jinja:9
+msgid "My name"
+msgstr ""
+
+#: localhost/profile.jinja:10
+msgid "My username"
+msgstr ""
+
+#: localhost/registration.jinja:9
+msgid "Full Name"
+msgstr ""
+
+#: localhost/registration.jinja:13
+msgid "Create new account"
+msgstr ""
+
+#: localhost/reset-password.jinja:10
+msgid "Send reset email"
+msgstr ""
+
+#: localhost/emails/activation-html.jinja:1
+#: localhost/emails/activation-text.jinja:1
+msgid "Hello"
+msgstr ""
+
+#: localhost/emails/activation-html.jinja:3
+#: localhost/emails/activation-text.jinja:3
+msgid "Thank you for registering on"
+msgstr ""
+
+#: localhost/emails/activation-html.jinja:5
+msgid "To activate your account, please click"
+msgstr ""
+
+#: localhost/emails/activation-html.jinja:5 localhost/emails/reset-html.jinja:1
+msgid "here"
+msgstr ""
+
+#: localhost/emails/activation-html.jinja:7
+#: localhost/emails/activation-text.jinja:9
+msgid "Kind regards"
+msgstr ""
+
+#: localhost/emails/activation-html.jinja:10
+#: localhost/emails/activation-text.jinja:11
+#: localhost/emails/reset-html.jinja:3 localhost/emails/reset-text.jinja:5
+msgid "Customer Support"
+msgstr ""
+
+#: localhost/emails/activation-text.jinja:5
+msgid "To activate your account, please click the link below:"
+msgstr ""
+
+#: localhost/emails/reset-html.jinja:1
+msgid "To reset your account click"
+msgstr ""
+
+#: localhost/emails/reset-text.jinja:1
+msgid "To reset your account click the link below:"
+msgstr ""
+

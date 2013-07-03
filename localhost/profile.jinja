@@ -1,0 +1,28 @@
+{% extends 'base.jinja' %}
+
+{% block main %}
+{% include 'nav.jinja' %}
+<div class="row">
+    <div class="span12">
+        <h2>{{ _('My details') }}</h2>
+        <ul>
+            <li>{{ _('My name') }}: {{ request.nereid_user.display_name }}</li>
+            <li>{{ _('My username') }}: {{ request.nereid_user.email }}</li>
+            <li><a href="{{ url_for('nereid.user.change_password') }}">{{ _('Change password') }}</a></li>
+        </ul>
+        <h3>{{ request.nereid_user.party.name }}</h3>
+        {% if request.nereid_user.party.addresses|length == 1 and not request.nereid_user.party.addresses[0].street %}
+            <p>{{ _('There are not address in your account') }}</p>
+        {% else %}
+            <ul>
+            {% for address in request.nereid_user.party.addresses %}
+                <li><a href="{{ url_for('party.address.edit_address', address=address.id) }}">{% if address.name %}{{address.name}}. {% endif %}{{ address.street }}. {{ address.zip }} {{ address.city }}</a></li>
+            {% endfor %}
+            </ul>
+        {% endif %}
+        <div id="new-address">
+            <a id="new-address" href="{{ url_for('party.address.edit_address') }}" class="btn btn-primary">{{ _('Create new address') }}</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

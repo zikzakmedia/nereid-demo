@@ -1,0 +1,20 @@
+{% extends 'base.jinja' %}
+{% from '_helpers.jinja' import render_field with context %}
+
+{% block main %}
+{% include 'nav.jinja' %}
+<div class="row">
+    <div class="span12">
+        {% if not request.is_guest_user %}
+        <h2>{{ _('Hey') }} {{ request.nereid_user.display_name }}, {{ _('you are already logged in') }}</h2>
+        <span><em>{{ _('Not') }} <a href="{{ url_for('nereid.website.logout') }}">{{ request.nereid_user.name }}</a> ?</em></span>
+        {% else %}
+        <form id="login-form" class="form-signin" method="post" action="{{ url_for('nereid.website.login') }}">
+            {{ render_field(login_form.email, class_="full email", placeholder=_("Email")) }}
+            {{ render_field(login_form.password, class_="half") }}
+            <button id="login" class="btn btn-large btn-primary" type="submit">{{ _('Sign in') }}</button>  <a href="{{ url_for('nereid.user.reset_account') }}">{{ _('I have forgotten my password') }}</a>
+        </form>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

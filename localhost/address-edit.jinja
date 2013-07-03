@@ -1,0 +1,25 @@
+{% extends 'base.jinja' %}
+{% from '_helpers.jinja' import render_field with context %}
+
+{% if address %}{% set address_url = url_for('party.address.edit_address', address=address.id) %}
+{% else %}{% set address_url = url_for('party.address.edit_address') %}{% endif %}
+
+{% block main %}
+{% include 'nav.jinja' %}
+<div class="row">
+    <div class="span12">
+        <form id="address-form" class="form-signin" method="post" action="{{ address_url }}">
+            {{ render_field(form.name, class_="full", placeholder=_("Name")) }}
+            {{ render_field(form.street, class_="full", placeholder=_("Street")) }}
+            {{ render_field(form.streetbis, class_="full", placeholder=_("Street Bis")) }}
+            {{ render_field(form.zip, class_="full", placeholder=_("Zip")) }}
+            {{ render_field(form.city, class_="full", placeholder=_("City")) }}
+            {{ render_field(form.country, class_="full", placeholder=_("Country")) }}
+            {{ render_field(form.subdivision, class_="full", placeholder=_("Subdivision")) }}
+            {{ render_field(form.email, class_="full", placeholder=_("Email")) }}
+            {{ render_field(form.phone, class_="full", placeholder=_("Phone")) }}
+            <button id="login" class="btn btn-large btn-primary" type="submit">{% if address %}{{ _('Update address') }}{% else %}{{ _('Create new address') }}{% endif %}</button>
+        </form>
+    </div>
+</div>
+{% endblock %}

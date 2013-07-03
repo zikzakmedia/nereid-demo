@@ -1,0 +1,17 @@
+{% extends 'base.jinja' %}
+{% from '_helpers.jinja' import render_field with context %}
+
+{% block main %}
+{% include 'nav.jinja' %}
+<div class="row">
+    <div class="span12">
+        <form id="registration-form" class="form-signin" method="post" action="{{ url_for('nereid.user.registration') }}">
+            {{ render_field(form.name, placeholder=_("Full Name"), class_="full") }}
+            {{ render_field(form.email, class_="full email", placeholder=_("Email")) }}
+            {{ render_field(form.password, class_="half") }}
+            {{ render_field(form.confirm, class_="half") }}
+            <button id="registration" type="submit" class="btn btn-large btn-primary">{{ _('Create new account') }}</button>
+        </form>
+    </div>
+</div>
+{% endblock %}
