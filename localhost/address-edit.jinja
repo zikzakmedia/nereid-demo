@@ -15,11 +15,57 @@
             {{ render_field(form.zip, class_="full", placeholder=_("Zip")) }}
             {{ render_field(form.city, class_="full", placeholder=_("City")) }}
             {{ render_field(form.country, class_="full", placeholder=_("Country")) }}
-            {{ render_field(form.subdivision, class_="full", placeholder=_("Subdivision")) }}
+
+            {# Subdivision is a unique case where we render a select #}
+            {% set field = form.subdivision %}
+            <div class="control-group">
+              <label class="control-label" for="{{ field.name }}">{{ field.label.text }}</label>
+              <div class="controls">
+                <select name="{{ field.name }}" id="{{ field.id }}" selected_id="{{field.data}}">
+                </select> 
+
+                {% if field.description %}
+                <br/><span class="help-inline">{{ field.description }}</span>
+                {% endif %}
+                
+                {% for error in field.errors %}
+                <br/><span class="help-inline">{{ error }}</span>
+                {% endfor %}
+
+              </div>
+            </div>
+
             {{ render_field(form.email, class_="full", placeholder=_("Email")) }}
             {{ render_field(form.phone, class_="full", placeholder=_("Phone")) }}
-            <button id="login" class="btn btn-large btn-primary" type="submit">{% if address %}{{ _('Update address') }}{% else %}{{ _('Create new address') }}{% endif %}</button>
+            <button id="address-submit" class="btn btn-large btn-primary" type="submit">{% if address %}{{ _('Update address') }}{% else %}{{ _('Create new address') }}{% endif %}</button>
         </form>
     </div>
 </div>
+{% endblock %}
+
+{% block jquery %}
+<script src="{{ STATIC }}{{ config['TEMPLATE'] }}/js/jquery.validate.js" type="text/javascript"></script>
+
+<script type="text/javascript" charset="utf-8">
+$(document).ready(function(){
+    // Register on change event
+    $("select#country").change(function(){
+    $.getJSON("{{ url_for('nereid.website.subdivision_list') }}",
+      {country: $(this).val()}, function(data){
+      var options = '';
+      $.each(data.result, function(index, map){
+          options += '<option value="' + map.id + '" code="' + map.code + '">' + map.name + '</option>';
+      });
+      $("select#subdivision").html(options);
+      $("select#subdivision option[value='{{ form.subdivision.data }}']").attr('selected', true);
+    });
+    });
+ 
+    // Onload trigger the change as country comes packed with form
+    $("select#country").triggerHandler("change")
+
+    $.validator.messages.required = "{{ _('This field is required') }}";
+    $("#address-form").validate();
+});
+</script>
 {% endblock %}
