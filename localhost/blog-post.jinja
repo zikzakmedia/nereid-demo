@@ -26,5 +26,9 @@
                 <a href="{{ url_for('nereid.blog.category.tag', uri=key) }}" alt="{{ key }}">{{ key }}</a>{% endfor %}</small>
         </div>{% endif %}
     </div>
-</div>
+    {% if post.images %}<div class="span12 imagebox">
+        {% include 'blog-post-images.jinja' %}
+    </div>
+</div>{% endif %}
+
 {% endblock %}

@@ -2,6 +2,9 @@
     border-bottom: 1px solid darkgrey;
     margin-bottom: 12px;
 }
+.imagebox {
+    margin-top: 20px;
+}
 #keys {
     border-top: 1px solid darkgrey;
     margin-top: 5px;
