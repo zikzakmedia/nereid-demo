@@ -19,3 +19,15 @@
   </div>
 </div>
 {% endmacro %}
+
+{% macro render_pagination(pagination, uri, endpoint) %}
+<div class="pagination text-center">
+    <ul>
+        {% if pagination.has_prev %}<li><a href="{{ url_for(endpoint, uri=uri, page=pagination.prev_num, **kwargs) }}" class="pageprev">{{ _('Previous') }}</a></li>{% endif %}
+        {% for page in pagination.iter_pages(left_edge=0, left_current=5, right_current=5, right_edge=0) %}
+        <li><a href="{% if uri %}{{ url_for(endpoint, uri=uri, page=page, **kwargs) }}{% else %}{{ url_for(endpoint, page=page, **kwargs) }}{% endif %}" class="{% if page == pagination.page %}pagecurrent{% else %}page{% endif %}">{{ page }}</a></li>
+        {% endfor %}
+        {% if pagination.has_next %}<li><a href="{{ url_for(endpoint, uri=uri, page=pagination.next_num, **kwargs) }}" class="pagenext">{{ _('Next') }}</a></li>{% endif %}
+    </ul>
+</div>
+{% endmacro %}
