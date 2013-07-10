@@ -8,6 +8,7 @@ from nereid.contrib.locale import Babel
 
 from werkzeug.contrib.sessions import FilesystemSessionStore
 from flask.ext.babel import Babel, gettext as _
+from defaultfilters import *
 
 def get_config():
     '''Get values from cfg file'''
