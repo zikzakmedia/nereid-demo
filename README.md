@@ -10,15 +10,25 @@ In this repo you can get source code to:
  * Reset password (and send emails)
  * Get info account user
  * Create or edit new cutomer addresses
+ * CMS: Add menu (first level) in template
+ * CMS: Article template
+ * CMS: Add banner in template
 
+Source code
+-----------
+
+ * Nereid: https://github.com/openlabs/nereid
+ * Trytond Nereid: https://github.com/openlabs/trytond-nereid
+ * Nereid CMS: https://bitbucket.org/zikzakmedia/trytond-nereid_cms
 
 Installation
 ------------
 
 How to install Nereid and Tryton Nereid in Nereid doc: http://nereid.openlabs.co.in/docs/
 
- * Install Nereid in your system or virtualenv
- * Create new database and install Nereid module Tryton
+ * Install Nereid and Trytond Nereid in your system or virtualenv
+ * Install Nereid CMS in your system or virtualenv
+ * Create new database and install Nereid and Nereid CMS modules in Tryton
  * When finish to create a database, go to Nereid menu and create a new website
    * Name: localhost
 

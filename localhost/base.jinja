@@ -21,5 +21,14 @@
 <div class="container">
     {% block main %}{% endblock %}
 </div>
+
+<div id="footer">
+  <div class="container">
+      <div class="links">
+        {% set menu=request.nereid_website.menu('bottonmenu') %}{% if menu %}{% set menus=menu.childs %}{% for menu in menus %}<a href="{{ menu.uri }}" alt="{{ menu.title }}">{{ menu.title }}</a>
+        {% endfor %}{% endif %}
+      </div>
+  </div>
+</div>
 {% block jquery %}{% endblock %}
 </body>
