@@ -19,7 +19,7 @@
         </div>
         <hr/>
         <div id="post">
-            {% if post.status %}{{ post.description|safe }}{% else %}<span class="alert">{{ _('Content this post is dissabled') }}</span>{% endif %}
+            {% if post.status %}{{ post.description|safe|nl2br }}{% else %}<span class="alert">{{ _('Content this post is dissabled') }}</span>{% endif %}
         </div>
         {% if post.metakeywords %}<div id="keys">
             <small>{{ _('Tags') }}: {% for key in post.metakeywords|keys() %}
