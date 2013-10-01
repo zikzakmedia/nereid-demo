@@ -7,6 +7,7 @@ SECRET_KEY = C5G94WB6BVRPHTO85RGI2Y6TM6HYY0P
 SITE = localhost:5000
 DATABASE_NAME = nereid
 TRYTON_CONFIG = /etc/trytond_dev.conf
+TEMPLATE = default
 TEMPLATE_LOADER_CLASS = nereid.templating.FileSystemLoader
 TEMPLATE_SEARCH_PATH = .
 TRANSLATIONS_PATH = ./translations/
