@@ -43,11 +43,4 @@ In nereid-demo dir, run:
 
 New server run http://127.0.0.1:5000/
 
-How to change server name
--------------------------
-
-This demo use website name: localhost. If you like use another website name:
-
- * Edit config.cfg and change SITE param.
- * Go to Nereid / Configuration / Web Sites menu. Change website name server.
- * Copy localhost directory (templates) to 'newsite' name.
+This demo run only a website.
