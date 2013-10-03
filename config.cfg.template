@@ -1,5 +1,4 @@
 [nereid]
-DEBUG = True
 ADMINS = ('user@domain.com',)
 TITLE = Demo Nereid 2.8
 AUTHOR = Zikzakmedia

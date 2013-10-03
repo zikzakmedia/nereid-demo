@@ -32,6 +32,8 @@ config = get_config()
 
 app = Nereid()
 app.config.update(config.get('nereid'))
+app.config['DEBUG'] = True
+app.config['TEMPLATE_PREFIX_WEBSITE_NAME'] = False # only a website
 app.root_path = os.path.dirname(os.path.abspath(__file__))
 app.session_interface.session_store = FilesystemSessionStore(
     '/tmp', session_class=Session
