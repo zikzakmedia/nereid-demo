@@ -6,7 +6,7 @@
     <meta name="description" content="{% block metadescription %}{% endblock %}">
     <meta name="keywords" content="{% block metakeywords %}{% endblock %}">
     <link rel="canonical" href="{% block canonical %}{% endblock %}">
-    <title>{{ config['TITLE'] }}</title>
+    <title>{% block title %}{% endblock %} - {{ config['TITLE'] }}</title>
     <meta name="author" content="{{ config['AUTHOR'] }}">
     <link href="{{ STATIC }}favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <link href="{{ STATIC }}{{ config['TEMPLATE'] }}/css/bootstrap.css" rel="stylesheet" type="text/css">
