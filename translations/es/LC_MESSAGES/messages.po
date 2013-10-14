@@ -17,193 +17,193 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 0.9.6\n"
 
-#: localhost/address-edit.jinja:12
+#: templates/address-edit.jinja:12
 msgid "Name"
 msgstr "Nombre"
 
-#: localhost/address-edit.jinja:13
+#: templates/address-edit.jinja:13
 msgid "Street"
 msgstr "Calle"
 
-#: localhost/address-edit.jinja:14
+#: templates/address-edit.jinja:14
 msgid "Street Bis"
 msgstr "Calle BIS"
 
-#: localhost/address-edit.jinja:15
+#: templates/address-edit.jinja:15
 msgid "Zip"
 msgstr "Código postal"
 
-#: localhost/address-edit.jinja:16
+#: templates/address-edit.jinja:16
 msgid "City"
 msgstr "Ciudad"
 
-#: localhost/address-edit.jinja:17
+#: templates/address-edit.jinja:17
 msgid "Country"
 msgstr "País"
 
-#: localhost/address-edit.jinja:18
+#: templates/address-edit.jinja:18
 msgid "Subdivision"
 msgstr "Provincia"
 
-#: localhost/address-edit.jinja:19
-#: localhost/login.jinja:13
-#: localhost/registration.jinja:10
-#: localhost/reset-password.jinja:9
+#: templates/address-edit.jinja:19
+#: templates/login.jinja:13
+#: templates/registration.jinja:10
+#: templates/reset-password.jinja:9
 msgid "Email"
 msgstr "Email"
 
-#: localhost/address-edit.jinja:20
+#: templates/address-edit.jinja:20
 msgid "Phone"
 msgstr "Teléfono"
 
-#: localhost/address-edit.jinja:21
+#: templates/address-edit.jinja:21
 msgid "Update address"
 msgstr "Actualizar dirección"
 
-#: localhost/address-edit.jinja:21
-#: localhost/address.jinja:18
-#: localhost/profile.jinja:24
+#: templates/address-edit.jinja:21
+#: templates/address.jinja:18
+#: templates/profile.jinja:24
 msgid "Create new address"
 msgstr "Crear nueva dirección"
 
-#: localhost/address.jinja:7
+#: templates/address.jinja:7
 msgid "My addresses"
 msgstr "Mis direcciones"
 
-#: localhost/address.jinja:9
-#: localhost/profile.jinja:15
+#: templates/address.jinja:9
+#: templates/profile.jinja:15
 msgid "There are not address in your account"
 msgstr "No hay direcciones en su cuenta"
 
-#: localhost/change-password.jinja:12
-#: localhost/profile.jinja:11
+#: templates/change-password.jinja:12
+#: templates/profile.jinja:11
 msgid "Change password"
 msgstr "Cambiar contraseña"
 
-#: localhost/home.jinja:6
-#: localhost/nav.jinja:16
+#: templates/home.jinja:6
+#: templates/nav.jinja:16
 msgid "Welcome"
 msgstr "Bienvenido"
 
-#: localhost/home.jinja:7
+#: templates/home.jinja:7
 msgid "Nereid is a webdevelopment framework for Python based on Tryton."
 msgstr "Nereid es una herramienta de desarrollo para Python basado en Tryton."
 
-#: localhost/home.jinja:9
+#: templates/home.jinja:9
 msgid "Learn more"
 msgstr "Leer más"
 
-#: localhost/home.jinja:11
-#: localhost/nav.jinja:22
+#: templates/home.jinja:11
+#: templates/nav.jinja:22
 msgid "Login"
 msgstr "Iniciar sesión"
 
-#: localhost/home.jinja:11
+#: templates/home.jinja:11
 msgid "or"
 msgstr "o bien"
 
-#: localhost/home.jinja:11
-#: localhost/nav.jinja:23
+#: templates/home.jinja:11
+#: templates/nav.jinja:23
 msgid "Registration"
 msgstr "Registrarse"
 
-#: localhost/home.jinja:13
-#: localhost/nav.jinja:19
+#: templates/home.jinja:13
+#: templates/nav.jinja:19
 msgid "My account"
 msgstr "Mi cuenta"
 
-#: localhost/login.jinja:9
+#: templates/login.jinja:9
 msgid "Hey"
 msgstr "Hola"
 
-#: localhost/login.jinja:9
+#: templates/login.jinja:9
 msgid "you are already logged in"
 msgstr "ha iniciado sessión en"
 
-#: localhost/login.jinja:10
+#: templates/login.jinja:10
 msgid "Not"
 msgstr "No eres"
 
-#: localhost/login.jinja:15
+#: templates/login.jinja:15
 msgid "Sign in"
 msgstr "Entrar"
 
-#: localhost/login.jinja:15
+#: templates/login.jinja:15
 msgid "I have forgotten my password"
 msgstr "He olbidado la contraseña"
 
-#: localhost/nav.jinja:20
+#: templates/nav.jinja:20
 msgid "Logout"
 msgstr "Salir"
 
-#: localhost/new-password.jinja:11
+#: templates/new-password.jinja:11
 msgid "New password"
 msgstr "Nueva contraseña"
 
-#: localhost/profile.jinja:7
+#: templates/profile.jinja:7
 msgid "My details"
 msgstr "Mis detalles"
 
-#: localhost/profile.jinja:9
+#: templates/profile.jinja:9
 msgid "My name"
 msgstr "Mi nombre"
 
-#: localhost/profile.jinja:10
+#: templates/profile.jinja:10
 msgid "My username"
 msgstr "Mi usuario"
 
-#: localhost/registration.jinja:9
+#: templates/registration.jinja:9
 msgid "Full Name"
 msgstr "Nombre completo"
 
-#: localhost/registration.jinja:13
+#: templates/registration.jinja:13
 msgid "Create new account"
 msgstr "Crear una cuenta"
 
-#: localhost/reset-password.jinja:10
+#: templates/reset-password.jinja:10
 msgid "Send reset email"
 msgstr "Enviar correo recordatorio"
 
-#: localhost/emails/activation-html.jinja:1
-#: localhost/emails/activation-text.jinja:1
+#: templates/emails/activation-html.jinja:1
+#: templates/emails/activation-text.jinja:1
 msgid "Hello"
 msgstr "Hola"
 
-#: localhost/emails/activation-html.jinja:3
-#: localhost/emails/activation-text.jinja:3
+#: templates/emails/activation-html.jinja:3
+#: templates/emails/activation-text.jinja:3
 msgid "Thank you for registering on"
 msgstr "Gracias por registrarse en"
 
-#: localhost/emails/activation-html.jinja:5
+#: templates/emails/activation-html.jinja:5
 msgid "To activate your account, please click"
 msgstr "Para activar una cuenta haga click"
 
-#: localhost/emails/activation-html.jinja:5
-#: localhost/emails/reset-html.jinja:1
+#: templates/emails/activation-html.jinja:5
+#: templates/emails/reset-html.jinja:1
 msgid "here"
 msgstr "aquí"
 
-#: localhost/emails/activation-html.jinja:7
-#: localhost/emails/activation-text.jinja:9
+#: templates/emails/activation-html.jinja:7
+#: templates/emails/activation-text.jinja:9
 msgid "Kind regards"
 msgstr "Muchas gracias"
 
-#: localhost/emails/activation-html.jinja:10
-#: localhost/emails/activation-text.jinja:11
-#: localhost/emails/reset-html.jinja:3
-#: localhost/emails/reset-text.jinja:5
+#: templates/emails/activation-html.jinja:10
+#: templates/emails/activation-text.jinja:11
+#: templates/emails/reset-html.jinja:3
+#: templates/emails/reset-text.jinja:5
 msgid "Customer Support"
 msgstr "Soporte de clientes"
 
-#: localhost/emails/activation-text.jinja:5
+#: templates/emails/activation-text.jinja:5
 msgid "To activate your account, please click the link below:"
 msgstr "Para activar una cuenta haga click en el siguiente enlace"
 
-#: localhost/emails/reset-html.jinja:1
+#: templates/emails/reset-html.jinja:1
 msgid "To reset your account click"
 msgstr "Para resetear una cuenta haga click"
 
-#: localhost/emails/reset-text.jinja:1
+#: templates/emails/reset-text.jinja:1
 msgid "To reset your account click the link below:"
 msgstr "Para resetear una cuanta haga click en el siguiente enlace:"
 
