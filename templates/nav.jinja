@@ -31,6 +31,11 @@
     </div>
 </div>
 
+{% if bread_crumbs %}<ul class="breadcrumb">
+    {% for crumb in bread_crumbs %}{% if not loop.last %}<li><a href="{{ crumb[0] }}">{{ crumb[1] }}</a> <span class="divider">></span>  </li>
+    {% else %}<li class="active">{{ crumb[1] }}</li> {% endif %}{% endfor %}
+</ul>{% endif %}
+
 {% with messages = get_flashed_messages() %}{% if messages %}
 <div class="container-fluid">
     <div class="row-fluid">
