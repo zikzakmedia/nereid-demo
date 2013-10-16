@@ -39,11 +39,10 @@
 {% with messages = get_flashed_messages() %}{% if messages %}
 <div class="container-fluid">
     <div class="row-fluid">
-        <div class="span12 well">
-            <ul class=error>
-                {% for message in messages %}<li>{{ message }}</li>{% endfor %}
-            </ul>
+        <div class="span12 well alert alert-info">
+        <a class="close" data-dismiss="alert">×</a>  
+            <ul>{% for message in messages %}<li>{{ message }}</li>{% endfor %}</ul>
         </div>
-        </div>
+    </div>
 </div>
 {% endif %}{% endwith %}
