@@ -1,6 +1,7 @@
 {% extends 'base.jinja' %}
 {% from '_helpers.jinja' import render_field with context %}
 
+{% block title %}{{ _('Edit address') }} - {{address.rec_name}}{% endblock %}
 {% if address %}{% set address_url = url_for('party.address.edit_address', address=address.id) %}
 {% else %}{% set address_url = url_for('party.address.edit_address') %}{% endif %}
 
@@ -34,9 +35,6 @@
 
               </div>
             </div>
-
-            {{ render_field(form.email, class_="full", placeholder=_("Email")) }}
-            {{ render_field(form.phone, class_="full", placeholder=_("Phone")) }}
             <button id="address-submit" class="btn btn-large btn-primary" type="submit">{% if address %}{{ _('Update address') }}{% else %}{{ _('Create new address') }}{% endif %}</button>
         </form>
     </div>
