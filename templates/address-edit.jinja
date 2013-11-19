@@ -35,6 +35,8 @@
 
               </div>
             </div>
+            {{ render_field(form.email, class_="full", placeholder=_("Email")) }}
+            {{ render_field(form.phone, class_="full", placeholder=_("Phone")) }}
             <button id="address-submit" class="btn btn-large btn-primary" type="submit">{% if address %}{{ _('Update address') }}{% else %}{{ _('Create new address') }}{% endif %}</button>
         </form>
     </div>
